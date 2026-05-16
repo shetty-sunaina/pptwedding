@@ -98,7 +98,11 @@
   nav a::after {
     content: "";
   }
-
+.hero-lockin-img {
+  display: block;
+  width: min(380px, 80vw);
+  margin: 0 auto 1.5rem;
+}
   .hero {
     text-align:center; padding:5.5rem 1.5rem 4rem;
     background:linear-gradient(160deg, var(--bg) 0%, var(--surface) 100%);
@@ -405,7 +409,8 @@
 </nav>
 
 <div class="hero">
-  <p class="hero-eyebrow editable">chalo, get ready</p>
+  <img class="hero-lockin-img" src="lock-in.png" alt="Sunaina and Rohit locking in">
+
   <h1><span class="editable">Sunaina</span><span class="amp editable"> &amp; </span><span class="editable">Rohit</span></h1>
   <p class="hero-date editable">25th November 2026</p>
   <p class="hero-venue editable">Udupi</p>
