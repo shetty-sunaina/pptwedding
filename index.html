@@ -58,8 +58,11 @@
   .saree-item a,
   .beach-card a,
   .contact-card a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    cursor: pointer;
   }
 
   .food-item a:hover,
@@ -67,8 +70,7 @@
   .saree-item a:hover,
   .beach-card a:hover,
   .contact-card a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
+    opacity: 0.75;
   }
 
   .food-item a::after,
@@ -77,7 +79,7 @@
   .beach-card a::after {
     content: " ↗";
     font-size: 0.75em;
-    opacity: 0.7;
+    opacity: 0.75;
   }
 
   .contact-card a::after,
