@@ -4,17 +4,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sunaina &amp; Rohit – Udupi Wedding</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
 
 <style>
-  @font-face {
-    font-family: 'CocoSharp';
-    src: url('Coco-Sharp-Extrabold-trial.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-  }
-
   :root {
     --bg:#EAF4F4; --surface:#D3EBEA;
     --teal:#1A7A7A; --teal-dark:#0D4E4E; --teal-light:#4AABAA;
@@ -27,17 +19,24 @@
 
   body {
     background:var(--bg); color:var(--text);
-    font-family:'Open Sans',sans-serif; font-weight:300; line-height:1.75;
+    font-family:'Nunito Sans',sans-serif;
+    font-weight:400;
+    line-height:1.75;
   }
 
   h1,h2,h3,h4,h5,h6,
-  .section-title, .saree-num,
+  .section-title,
   .transport-card h3, .food-col h3, .place-card-header h3,
   .saree-item h4, .beach-card h4, .weather-card h4,
   .t-content h4, .practical-card h4, .contact-card .c-name,
   .food-item .name {
-    font-family:'CocoSharp','Open Sans',sans-serif;
+    font-family:'Nunito Sans',sans-serif;
     font-weight:800;
+  }
+
+  .saree-num {
+    font-family:'Nunito Sans',sans-serif;
+    font-weight:300;
   }
 
   nav {
@@ -58,7 +57,6 @@
 
   nav a:hover { background:var(--teal); color:#fff; }
 
-  /* Link styling */
   a {
     color: inherit;
   }
@@ -124,10 +122,14 @@
     font-weight:800;
     color:var(--teal-dark);
     line-height:1;
-    letter-spacing:-.01em;
+    letter-spacing:-.03em;
   }
 
-  .hero h1 .amp { color:var(--coral); font-style:italic; font-weight:800; }
+  .hero h1 .amp {
+    color:var(--coral);
+    font-style:normal;
+    font-weight:800;
+  }
 
   .hero-date { font-size:1.3rem; font-style:italic; color:var(--muted); margin-top:1.2rem; }
 
@@ -221,7 +223,7 @@
     display:inline-block; font-size:10px; letter-spacing:.1em; text-transform:uppercase;
     background:var(--coral); color:#fff;
     padding:2px 8px; border-radius:10px; margin-left:6px; vertical-align:middle;
-    font-family:'Open Sans',sans-serif;
+    font-family:'Nunito Sans',sans-serif;
   }
 
   .places-grid {
@@ -242,7 +244,7 @@
   .place-card-header .place-type {
     font-size:10px; letter-spacing:.2em; text-transform:uppercase;
     opacity:.7; margin-bottom:4px;
-    font-family:'Open Sans',sans-serif;
+    font-family:'Nunito Sans',sans-serif;
   }
 
   .place-card-header h3 { font-size:1.25rem; font-weight:800; }
@@ -252,7 +254,7 @@
   .place-distance {
     font-size:11px; color:var(--coral);
     margin-top:.5rem; letter-spacing:.05em;
-    font-family:'Open Sans',sans-serif;
+    font-family:'Nunito Sans',sans-serif;
   }
 
   .saree-list { display:flex; flex-direction:column; gap:1rem; margin-top:1.6rem; }
@@ -264,9 +266,11 @@
   }
 
   .saree-num {
-    font-size:2.5rem; font-weight:800;
-    color:var(--teal-light); opacity:.5;
-    line-height:1; min-width:2rem;
+    font-size:2.5rem;
+    color:var(--teal-light);
+    opacity:.5;
+    line-height:1;
+    min-width:2rem;
   }
 
   .saree-item h4 { font-size:16px; font-weight:800; color:var(--teal-dark); }
@@ -287,7 +291,7 @@
     background:rgba(255,255,255,.2);
     font-size:10px; letter-spacing:.1em; text-transform:uppercase;
     padding:3px 10px; border-radius:10px;
-    font-family:'Open Sans',sans-serif;
+    font-family:'Nunito Sans',sans-serif;
   }
 
   .weather-grid {
@@ -319,8 +323,8 @@
     background:var(--teal); color:#fff;
     border-radius:50%; display:flex;
     align-items:center; justify-content:center;
-    font-size:12px; font-weight:500; z-index:1;
-    font-family:'Open Sans',sans-serif;
+    font-size:12px; font-weight:700; z-index:1;
+    font-family:'Nunito Sans',sans-serif;
   }
 
   .t-content {
@@ -331,7 +335,7 @@
   .t-content .t-day {
     font-size:10px; letter-spacing:.2em; text-transform:uppercase;
     color:var(--coral); margin-bottom:4px;
-    font-family:'Open Sans',sans-serif;
+    font-family:'Nunito Sans',sans-serif;
   }
 
   .t-content h4 { font-size:16px; font-weight:800; color:var(--teal-dark); margin-bottom:4px; }
@@ -373,10 +377,10 @@
   .contact-card .c-role {
     font-size:11px; letter-spacing:.12em; text-transform:uppercase;
     opacity:.6; margin-bottom:.8rem;
-    font-family:'Open Sans',sans-serif;
+    font-family:'Nunito Sans',sans-serif;
   }
 
-  .contact-card .c-info { font-size:13px; opacity:.85; font-family:'Open Sans',sans-serif; }
+  .contact-card .c-info { font-size:13px; opacity:.85; font-family:'Nunito Sans',sans-serif; }
 
   footer {
     text-align:center; padding:2rem;
